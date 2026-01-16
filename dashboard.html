@@ -212,7 +212,7 @@ select{
   const dbg = msg => { if (debugEl) debugEl.textContent = 'Debug: ' + msg; };
 
   try{
-   const res = await fetch('bundle.json'); 
+    const res = await fetch('./bundle.json');
     if (!res.ok){
       dbg('bundle.json load failed: ' + res.status);
       return;
